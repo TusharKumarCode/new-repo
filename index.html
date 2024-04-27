@@ -23,23 +23,8 @@
 
       <style>
             .nav-link.active{
-                  font-size: 20px;
-                  background-color: darkblue;
-                  width:90px;
-                  text-align: center;
-                  border-radius: 10px;
+                  background-color:darksalmon;     
             }
-
-            .nav-link{
-                 font-size: 20px;
-                 color:lightsalmon;
-                 text-align: center;
-                 width: 90px;
-                 
-            }
-
-           
-
            #fixit{
                 position:absolute;
                 width:63%;
@@ -48,9 +33,7 @@
                 height:60px;
                 background-color: rgb(40, 138, 138);
                 border-radius: 10px;
-                
             }
-
             #navg{
                 position:fixed;
                 top:0;
@@ -60,7 +43,7 @@
             }
            #setpos{
                position: absolute;
-               top:150%;
+               top:90%;
                right:28%;
                width: 60%;
            }
@@ -69,50 +52,50 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navigate">
-  <nav class="navbar navbar-expand-lg bg-light" id="navigate" style="height: 500px;">
-        <div class="container-fluid d-flex justify-content-evenly align-items-center" id="fixit">
+  <nav class="navbar navbar-expand-lg bg-light" id="navigate" style="height: 470px;">
+        <div class="container-fluid" id="fixit">
                 <a class="navbar-brand fs-1 fw-bold" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav d-flex justify-content-evenly w-75">
+                <div class="collapse navbar-collapse mx-5" id="navbarNavDropdown">
+          <ul class="navbar-nav d-flex justify-content-evenly w-100 mx-5">
                 <li class="nav-item">
-                         <a class="nav-link active text-light" aria-current="page" href="#scroll1" id="hov">Home</a>
-                    <div class="d-flex justify-content-between align-items-center bg-light border border-2 rounded-3 d-none" id="setpos">
+                         <a class="nav-link active text-light fw-bold rounded-3 fs-5" aria-current="page" href="#scroll1" id="hov">Home</a>
+                    <div class="d-flex justify-content-between align-items-center bg-secondary border border-0 rounded-3 d-none" id="setpos">
                          <ul style="list-style-type:none;">
-                             <li class="fs-4">one</li>
-                             <li class="fs-4">two</li>
-                             <li class="fs-4">third</li>
-                             <li class="fs-4">four</li>
-                             <li class="fs-4">five</li>
+                             <li class="fs-4 text-light text-capitalize">one</li>
+                             <li class="fs-4 text-light text-capitalize">two</li>
+                             <li class="fs-4 text-light text-capitalize">third</li>
+                             <li class="fs-4 text-light text-capitalize">four</li>
+                             <li class="fs-4 text-light text-capitalize">five</li>
                         </ul>
 
                            <ul style="list-style-type: none;">
-                                <li class="fs-4">six</li>
-                                <li class="fs-4">seven</li>
-                                <li class="fs-4">eight</li>
-                                <li class="fs-4">nine</li>
-                                <li class="fs-4">ten</li>
+                                <li class="fs-4 text-light text-capitalize">six</li>
+                                <li class="fs-4 text-light text-capitalize">seven</li>
+                                <li class="fs-4 text-light text-capitalize">eight</li>
+                                <li class="fs-4 text-light text-capitalize">nine</li>
+                                <li class="fs-4 text-light text-capitalize">ten</li>
                            </ul>
 
                        <ul style="list-style-type: none;">
-                             <li class="fs-4">eleven</li>
-                             <li class="fs-4">twelve</li>
-                             <li class="fs-4">thirteen</li>
-                             <li class="fs-4">fourteen</li>
-                             <li class="fs-4">fivteen</li>
+                             <li class="fs-4 text-light text-capitalize">eleven</li>
+                             <li class="fs-4 text-light text-capitalize">twelve</li>
+                             <li class="fs-4 text-light text-capitalize">thirteen</li>
+                             <li class="fs-4 text-light text-capitalize">fourteen</li>
+                             <li class="fs-4 text-light text-capitalize">fivteen</li>
                        </ul>
                     </div>
                 </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#scroll2">Features</a>
+                      <a class="nav-link fw-bold rounded-3 fs-5 text-light" href="#scroll2">Features</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#scroll3">Pricing</a>
+                      <a class="nav-link fw-bold rounded-3 fs-5 text-light" href="#scroll3">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" id="ius" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle fw-bold rounded-3 fs-5 text-light" id="ius" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown link
                       </a>
                       <ul class="dropdown-menu">
@@ -129,21 +112,37 @@
   
   <div class="container-fluid" id="scroll1">
        <div class="row">
-              <div class="col-md-5">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aperiam ducimus, perspiciatis iusto neque possimus, voluptatibus debitis expedita corporis nulla eos ullam dignissimos cumque tempore doloribus, aliquam nihil at totam.</p>
+              <div class="col-md-7">
+                     <p class="fs-3 px-3 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aperiam ducimus, perspiciatis iusto neque possimus, voluptatibus debitis expedita corporis nulla eos ullam dignissimos cumque tempore doloribus, aliquam nihil at totam.</p>
               </div>
 
               <div class="col-md-5">
-                  
+                    <img src="download1.jpg" class="img-fluid mx-3 my-5 h-50">
               </div>
        </div>
   </div>
-  <div class="container-fluid" id="scroll2">
+  <div class="container-fluid" id="scroll2" style="height: 500px;">
          <div class="row">
               <div class="col-12">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, molestias aliquid quam iure iste praesentium minima ea tempore ipsum alias ex quos nihil nesciunt ipsa. Modi repudiandae nemo est! Suscipit inventore animi, cupiditate sapiente odit nam, dolorum ipsam, totam repellat natus impedit? Reprehenderit quidem ea suscipit deserunt hic quisquam expedita possimus sit quos provident earum laborum quam atque laudantium, placeat dolore fuga inventore eaque rem voluptatum, nostrum blanditiis facilis cupiditate. Dolore ex earum molestiae qui distinctio debitis, quibusdam quod et voluptatum nulla natus nemo. Quaerat assumenda maxime, provident nobis animi recusandae doloribus, accusantium, ut minima deleniti ad iure ducimus. Quos, corrupti quia aut, in necessitatibus unde ullam ea fugiat architecto dolore beatae. Quam modi, ab voluptatem beatae maxime exercitationem repellat accusantium distinctio deleniti adipisci eius a cupiditate dolores, quis doloribus sed inventore est quod asperiores quasi vel quo expedita enim quaerat. Voluptatem, optio autem eos ut quae ab dolorem dolores minus repellat non magni nisi suscipit ipsum corrupti molestias! Eos itaque tenetur ipsa, vel quibusdam voluptatibus. Voluptates rerum aspernatur iste laboriosam quibusdam, saepe fugiat necessitatibus quia a illo unde esse doloremque provident ea vero tempore enim quos qui. Voluptate, quibusdam! Maxime beatae nulla debitis provident, laboriosam nesciunt, fugit quis amet recusandae corrupti sed assumenda quo! Amet, debitis vero et non quaerat mollitia itaque, eos accusamus iste est molestiae minima. Quisquam natus, suscipit recusandae maxime deleniti amet aperiam eos sit, eius rerum delectus distinctio reiciendis dicta accusamus assumenda aspernatur cupiditate magni neque officia, tempora alias ea beatae. Eveniet facilis iure beatae sint in soluta, ex distinctio eius dicta odit modi quia a molestiae delectus, animi cumque, illo quasi veniam. Quaerat explicabo quibusdam accusamus sequi. Placeat necessitatibus ab numquam earum dicta architecto eaque alias laudantium vero aut nulla similique ex nostrum atque, ut ipsum asperiores. At esse praesentium ea iste. Harum, dolorum.
               </div>
          </div>
+  </div>
+
+  <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore perferendis possimus nisi magnam, explicabo voluptate deserunt porro corporis. Atque voluptas beatae rem neque perspiciatis eligendi est laudantium aspernatur voluptatem!</p>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-2">
+                  <img src="nature.jpg" class="img-fluid">
+             </div>
+             <div class="col-md-3">
+              <img src="sunset.jpg" class="img-fluid">
+         </div>
+        </div>
   </div>
     
      
