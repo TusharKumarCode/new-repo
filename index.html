@@ -43,32 +43,41 @@
             }
            #setpos{
                position: absolute;
-               top:90%;
-               right:28%;
-               width: 60%;
+               top:100%;
+               left:15%;
+               width: 95%;
+               background-color: rgba(255,255,255,0.8);
+               height: 450%;
+               
            }
 
-           .card{
-               height: 300px;
-               width: 210px;
+           #intrn{
+               height:200px;
+               width: 1200px;
+               margin-left:74px;
+               border: 1px solid black;
+               
            }
-
            .card-img-top{
-                 height: 52%;
+                  height: 200px;
+                  width: 50px;
            }
 
-           @media (max-width:600px){
-                .card{
-                    height: 250px;
-                    width: 180px;
+           #navigate{
+                background-color: rgb(4, 4, 71);
+           }
+
+           @media(max-width:1290px){
+                html,body{
+                    overflow-x: hidden;
                 }
            }
-            
+        
       </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navigate">
-  <nav class="navbar navbar-expand-lg bg-light" id="navigate" style="height: 470px;">
+  <nav class="navbar navbar-expand-lg" id="navigate" style="height: 350px;">
         <div class="container-fluid" id="fixit">
                 <a class="navbar-brand fs-1 fw-bold" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,7 +87,7 @@
           <ul class="navbar-nav d-flex justify-content-evenly w-100 mx-5">
                 <li class="nav-item">
                          <a class="nav-link active text-light fw-bold rounded-3 fs-5" aria-current="page" href="#scroll1" id="hov">Home</a>
-                    <div class="d-flex justify-content-between align-items-center bg-secondary border border-0 rounded-3 d-none" id="setpos">
+                    <div class="d-flex justify-content-between align-items-center border border-0 rounded-3 d-none" id="setpos">
                          <ul style="list-style-type:none;">
                              <li class="fs-4 text-light text-capitalize">one</li>
                              <li class="fs-4 text-light text-capitalize">two</li>
@@ -124,6 +133,7 @@
             </div>
           </div>
       </nav>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(4, 4, 71)" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,122.7C640,139,800,213,960,234.7C1120,256,1280,224,1360,208L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
     
   
   <div class="container-fluid" id="scroll1">
@@ -139,157 +149,183 @@
   </div>
   <div class="container-fluid" id="scroll2">
          <div class="row">
-              <div class="col-12">
+              <div class="col-12 fs-2">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, molestias aliquid quam iure iste praesentium minima ea tempore ipsum alias ex quos nihil nesciunt ipsa. Modi repudiandae nemo est! Suscipit inventore animi, cupiditate sapiente odit nam, dolorum ipsam, totam repellat natus impedit? Reprehenderit quidem ea suscipit deserunt hic quisquam expedita possimus sit quos provident earum laborum quam atque laudantium, placeat dolore fuga inventore eaque rem voluptatum, nostrum blanditiis facilis cupiditate. Dolore ex earum molestiae qui distinctio debitis, quibusdam quod et voluptatum nulla natus nemo. Quaerat assumenda maxime, provident nobis animi recusandae doloribus, accusantium, ut minima deleniti ad iure ducimus. Quos, corrupti quia aut, in necessitatibus unde ullam ea fugiat architecto dolore beatae. Quam modi, ab voluptatem beatae maxime exercitationem repellat accusantium distinctio deleniti adipisci eius a cupiditate dolores, quis doloribus sed inventore est quod asperiores quasi vel quo expedita enim quaerat. Voluptatem, optio autem eos ut quae ab dolorem dolores minus repellat non magni nisi suscipit ipsum corrupti molestias! Eos itaque tenetur ipsa, vel quibusdam voluptatibus. Voluptates rerum aspernatur iste laboriosam quibusdam, saepe fugiat necessitatibus quia a illo unde esse doloremque provident ea vero tempore enim quos qui. Voluptate, quibusdam! Maxime beatae nulla debitis provident, laboriosam nesciunt, fugit quis amet recusandae corrupti sed assumenda quo! Amet, debitis vero et non quaerat mollitia itaque, eos accusamus iste est molestiae minima. Quisquam natus, suscipit recusandae maxime deleniti amet aperiam eos sit, eius rerum delectus distinctio reiciendis dicta accusamus assumenda aspernatur cupiditate magni neque officia, tempora alias ea beatae. Eveniet facilis iure beatae sint in soluta, ex distinctio eius dicta odit modi quia a molestiae delectus, animi cumque, illo quasi veniam. Quaerat explicabo quibusdam accusamus sequi. Placeat necessitatibus ab numquam earum dicta architecto eaque alias laudantium vero aut nulla similique ex nostrum atque, ut ipsum asperiores. At esse praesentium ea iste. Harum, dolorum.
               </div>
          </div>
   </div>
 
 
-<div class="container-fluid bg-primary-subtle" id="scroll3">
-  <div class="d-flex justify-content-evenly align-items-center flex-wrap">
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.200</span></h3>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-         </div>
-      </div> 
- 
-     <div class="card mt-4 mb-4 position-static">
-       <img src="img.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-           <h3>item1<span class="text-danger px-md-3 px-sm-2 px-2">Rs.35</span></h3>
-           <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-        </div>
-     </div> 
- 
-    <div class="card mt-4 mb-4 position-static">
-     <img src="img.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-         <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.999</span></h3>
-         <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-      </div>
-  </div> 
- 
-  <div class="card mt-4 mb-4 position-static">
-   <img src="img.jpg" class="card-img-top" alt="">
-    <div class="card-body">
-       <h3>item1<span class="text-danger px-md-3 px-sm-2 px-2">Rs.89</span></h3>
-       <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-    </div>
- </div> 
-      
-     <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-           <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.499</span></h3>
-           <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-        </div>
-     </div> 
-      
-    <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-          <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.199</span></h3>
-          <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-        </div>
-     </div>
-
-</div>
    
-<div class="d-flex justify-content-evenly align-items-center flex-wrap">
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.199</span></h3>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-         </div>
-      </div> 
-      
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.199</span></h3>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-         </div>
-      </div> 
-      
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.199</span></h3>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-         </div>
-      </div> 
-      
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.599</span></h3>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-         </div>
-      </div> 
 
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h3>item1<span class="text-danger px-md-2 px-sm-2 px-2">Rs.199</span></h3>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2">add to cart</button>
-         </div>
-      </div> 
+      <div class="bg-success container-fluid" id="scroll3">
+            <div class="row">
+              <div class="overflow-x-auto my-5 d-flex" id="intrn">
 
-      <div class="card mt-4 mb-4 position-static">
-        <img src="img.jpg" class="card-img-top" alt="">
-         <div class="card-body">
-            <h1 class="fs-3">item1<span class="text-danger px-md-3 px-sm-2 px-2">Rs.99</span></h1>
-            <button class="btn btn-outline-danger mt-md-4 mt-sm-3 mt-2" type="button">add to cart</button>
-         </div>
-      </div> 
-</div>
+                <div class="box border border-2 bg-light rounded-2 mx-5" id="sizz">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-</div>
+                <div class="box border border-2 bg-light rounded-2 d-inline-block w-25">
+                  <img src="travel.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-<div id="carouselExample" class="carousel slide bg-dark">
-   <div class="carousel-inner position-static w-100 border border-3 start-50">
-     <div class="carousel-item border border-3 w-25 h-75 mx-4 my-4 d-block">
-          
-              <img src="sunset.jpg" alt="" class="h-100 w-100">
-          
-     </div>
-     <div class="carousel-item border border-3 w-25 h-75  my-4 d-block">
-      
-         <img src="sunset.jpg" alt="" class="h-100 w-100">
-     
-     </div>
-     <div class="carousel-item border border-3 w-25 h-75  my-4 d-block mx-5">
-      <img src="sunset.jpg" alt="" class="h-100 w-100">
-     </div>
+                <div class="box border border-2 bg-light rounded-2 d-inline-block w-25">
+                  <img src="travel.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-     <div class="carousel-item border border-3 w-25 h-75  my-4 d-block mx-5">
-      <img src="sunset.jpg" alt="" class="h-100 w-100">
-     </div>
+                <div class="box border border-2 bg-light rounded-2 d-inline-block w-25">
+                  <img src="travel.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-     <div class="carousel-item border border-3 w-25 h-75  my-4 d-block mx-5">
-      <img src="sunset.jpg" alt="" class="h-100 w-100">
-     </div>
+                <div class="box border border-2 bg-light rounded-2 d-inline-block w-25">
+                  <img src="travel.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-     <div class="carousel-item border border-3 w-25 h-75  my-4  mx-5">
-      <img src="sunset.jpg" alt="" class="h-100 w-100">
-     </div>
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-   </div>
-   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Previous</span>
-   </button>
-   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Next</span>
-   </button>
- </div>
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
 
-      
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+                <div class="box border border-2 bg-light rounded-2">
+                  <img src="travel.jpg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn btn-primary">add to cart</a>
+                  </div>
+                </div>
+
+               
+            </div>
+          </div>
+      </div>
+
+      <div class="bg-danger container-fluid">
+        <div class="row">
+             <div class="d-flex bg-light overflow-x-auto"  id="st">
+                  
+             </div>
+        </div>
+  </div>
       <script src="javasc.js"></script>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
