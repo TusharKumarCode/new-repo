@@ -70,11 +70,15 @@
                height: 65px;
                width:250px;
                font-size: 17px;
-               background-color: rgb(162, 59, 252);
+               background-color: rgb(85, 9, 151);
            }
 
            #btnclk:hover{
                  background-color: rgb(3, 3, 138);
+           }
+
+           #scroll2{
+                background: linear-gradient(to top left,blue,white,orange);
            }
         
       </style>
@@ -156,9 +160,9 @@
             <h1 class="text-center text-capitalize py-3">We offer a wide range of <br>digital <span class="text-primary fw-bold text-decoration-underline">Services</span></h1>
              <p class="text-center pb-5 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ipsam doloribus <br>ad voluptatibus qui ea atque tenetur quae alias cumque.</p>
         <div class="row">
-              <div class="col-6 bg-info-subtle mx-4 mt-5 rounded-4 mb-3">
+              <div class="col-md-6 col-sm-6 bg-info-subtle mx-md-4 mt-5 rounded-4 mb-3">
                     <h1 class="my-5 mx-4">Researching Products</h1>
-                    <p class="fs-5 mx-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. tenetur maxime distinctio</p>
+                    <p class="fs-5 mx-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. tenetur maxime.</p>
                      <ul class="my-5 mx-3">
                          <li class="fs-5 pt-3">ideation&Evaluation</li>
                          <li class="fs-5 pt-3">UX review</li>
@@ -166,10 +170,10 @@
                          <li class="fs-5 pt-3">scoping sessions</li>
                          <li class="fs-5 pt-3">UX Writing</li>
                      </ul>
-                     <button type="button" class="btn btn-outline-primary fw-bold btn-lg rounded-pill mx-4">view details</button>
+                     <button type="button" class="btn btn-outline-primary fw-bold btn-lg rounded-pill mx-4 mb-5">view details</button>
               </div>
 
-              <div class="col-5 bg-danger-subtle mx-4 my-5 rounded-4">
+              <div class="col-md-5 col-sm-5 bg-danger-subtle mx-md-4 my-5 rounded-4">
                 <h1 class="px-4 py-5">Designing Products</h1>
                 <p class="fs-5 px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tenetur maxime.</p>
                  <ul class="my-5 mx-3">
@@ -183,7 +187,7 @@
       </div>
 
     <div class="row">
-          <div class="col-5 bg-primary-subtle mx-4 my-5 rounded-4">
+          <div class="col-md-5 col-sm-5 bg-primary-subtle mx-md-4 my-5 rounded-4">
               <h1 class="px-4 py-5">Developing Products</h1>
               <p class="fs-5 px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tenetur maxime.</p>
                    <ul class="my-5 mx-3">
@@ -195,7 +199,7 @@
              <button type="button" class="btn btn-outline-primary fw-bold btn-lg rounded-pill mx-4 mb-5">view details</button>
          </div>
 
-            <div class="col-6 bg-success-subtle mx-4 mt-5 mb-3 rounded-4">
+            <div class="col-md-6 col-sm-6 bg-success-subtle mx-md-4 mt-5 mb-3 rounded-4">
                 <h1 class="px-4 py-5">Products growth & care</h1>
                 <p class="fs-5 px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.tenetur maxime distinctio.</p>
                      <ul class="my-5 mx-3">
@@ -208,23 +212,43 @@
                   <button type="button" class="btn btn-outline-primary fw-bold btn-lg rounded-pill mx-4 mb-5">view details</button>
             </div> 
      </div>
+              <div class="row d-none" id="colps">
+                    <div class="col-md-6 col-sm-6 bg-dark-subtle mx-md-4 mt-5 mb-3 rounded-4">
+                        <h1 class="px-4 py-5">Products safety</h1>
+                        <p class="fs-5 px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.tenetur maxime distinctio.</p>
+                             <ul class="my-5 mx-3">
+                                 <li class="fs-5 pt-3">Antivirus</li>
+                                 <li class="fs-5 pt-3">Content Creation</li>
+                                 <li class="fs-5 pt-3">Content Marketing</li>
+                                 <li class="fs-5 pt-3">Non-code Development</li>
+                                 <li class="fs-5 pt-3">Cms Development</li>
+                             </ul>
+                          <button type="button" class="btn btn-outline-primary fw-bold btn-lg rounded-pill mx-4 mb-5">view details</button>
+                    </div> 
+
+                    <div class="col-md-5 col-sm-5 bg-warning-subtle mx-md-4 mt-5 mb-3 rounded-4">
+                      <h1 class="px-4 py-5">Delevary Products</h1>
+                      <p class="fs-5 px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.tenetur maxime distinctio.</p>
+                           <ul class="my-5 mx-3">
+                               <li class="fs-5 pt-3">Delevary</li>
+                               <li class="fs-5 pt-3">Content Creation</li>
+                               <li class="fs-5 pt-3">Content Marketing</li>
+                               <li class="fs-5 pt-3">Non-code Development</li>
+                           </ul>
+                        <button type="button" class="btn btn-outline-primary fw-bold btn-lg rounded-pill mx-4 mb-5">view details</button>
+                     </div> 
+              </div>
         <button class="btn fw-bold text-capitalize my-5 rounded-pill text-light" type="button" id="btnclk">browse all service</button>
   </div>
 
 
-      <div class="bg-success container-fluid" id="scroll3">
+      <div class="bg-success container-fluid" id="scroll3" style="height: 400px;">
             <div class="row">
-              
+                  
             </div>
       </div>
 
-      <div class="bg-danger container-fluid">
-        <div class="row">
-             <div class="d-flex bg-light overflow-x-auto"  id="st">
-                  
-             </div>
-        </div>
-  </div>
+      
       <script src="javasc.js"></script>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 

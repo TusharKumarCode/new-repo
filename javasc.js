@@ -26,9 +26,18 @@ list.addEventListener('mouseout',function(){
     list.setAttribute('class','d-flex justify-content-between align-items-center border border-0 rounded-3 d-none')
 });
 
-btn="";
-str=document.querySelector('#st');
-for(let i=1 ; i<=100; i++){
-    btn+='<button type="button" class="btn btn-primary w-25 mx-5 my-5 fs-2">ok</button>'
-}
-str.innerHTML=btn;
+
+let vtn=document.getElementById('btnclk');
+let container=document.getElementById('colps');
+let num=0;
+vtn.addEventListener("click",function(){
+          if(num==0){
+              container.setAttribute('class','row d-visible')
+              num=1;
+              vtn.innerHTML="close";
+          }else{
+              container.setAttribute('class','row d-none')
+              num=0;
+              vtn.innerHTML="browse all service";
+          }
+});
