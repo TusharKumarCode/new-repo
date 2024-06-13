@@ -103,6 +103,35 @@
            #scroll2{
                 background: linear-gradient(to top left,blue,white,orange);
            }
+
+.sub {
+  background: linear-gradient(
+    135deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 25px;
+  width: 50px; */
+  height:2rem;
+  width: 5rem;
+  border-radius: 1.6rem;
+  padding: 0.3rem;
+}
+
+.sub:hover{
+     cursor: pointer;
+}
+
+.round {
+    background-color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+}
+
         
       </style>
 </head>
@@ -265,11 +294,50 @@
   </div>
 
 
-      <div class="bg-success container-fluid" id="scroll3" style="height: 400px;">
-            <div class="row">
-                  
+  <div class="bg-dark-subtle container-fluid d-flex flex-column align-items-center" id="scroll3">
+                   <h1 class="mt-3 text-decoration-underline text-uppercase text-danger">Our Pricing</h1>
+      <div class="row">
+           <div class="d-flex align-items-center my-5">
+                 <label class="mx-4 fs-2 text-primary">Monthly</label>
+                 <label class="sub" for="checkbox" id="sub"><div class="round"></div></label>
+                 <label class="mx-4 fs-2 text-primary">Yearly</label>
             </div>
-      </div>
+       </div>
+    <div class="row  border">
+              <div class="col-md-4 bg-light col-sm-4 col-12">
+                    <ul style="list-style-type: none;" class="d-flex flex-column justify-content-evenly border align-items-center">
+                         <li class="fs-2">basic</li>
+                         <li>$99</li>
+                         <li>50 gb storage</li>
+                         <li>2 users</li>
+                         <li>sendupto3gb</li>
+                         <li><a>get start</a></li>
+                    </ul>
+              </div>
+                   <div class="col-md-4">
+                         <ul style="list-style-type: none;">
+                              <li class="mx-5 my-3" style="width: 100%;">basic</li>
+                              <li style="width: 100%;">$99</li>
+                              <li style="width: 100%;">50gbstorage</li>
+                              <li style="width: 100%;">2 users</li>
+                              <li style="width: 100%;">sendupto3gb</li>
+                              <li style="width: 150%;" class="border border-5"><a>get start</a></li>
+                         </ul>
+                   </div>
+
+              <div class="col-md-4">
+                    <ul style="list-style-type: none;">
+                         <li class="mx-5 my-3" style="width: 100%;">basic</li>
+                         <li style="width: 100%;">$99</li>
+                         <li style="width: 100%;">50gbstorage</li>
+                         <li style="width: 100%;">2 users</li>
+                         <li style="width: 100%;">sendupto3gb</li>
+                         <li style="width: 150%;" class="border border-5"><a>get start</a></li>
+                    </ul>
+              </div>
+
+        </div>
+  </div>
 
       
       <script src="javasc.js"></script>
