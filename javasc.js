@@ -41,3 +41,25 @@ vtn.addEventListener("click",function(){
               vtn.innerHTML="browse all service";
           }
 });
+
+let side=document.getElementById('sub');
+let price=document.querySelector("#lowpr");
+let money=document.querySelector("#yrp");
+let charge=document.querySelector("#midpri");
+let val=0;
+side.addEventListener("click", function(){
+       if(val==0){
+          side.style.justifyContent='flex-end';
+          price.innerHTML="$99";
+          money.innerHTML="$2000";
+          charge.innerHTML="$199";
+          val=1;
+       }else{
+           side.style.justifyContent='flex-start';
+           price.innerHTML="$49";
+           money.innerHTML="$999";
+          charge.innerHTML="$99";
+           val=0;
+       }
+      
+})
