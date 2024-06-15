@@ -113,8 +113,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* height: 25px;
-  width: 50px; */
   height:2rem;
   width: 5rem;
   border-radius: 1.6rem;
@@ -130,6 +128,43 @@
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
+}
+
+#mfl{
+   display: flex;
+   align-items: center;
+   width: 800px;
+}
+
+.conprc{
+    width: 230px;
+    height: 350px;
+    background-color: steelblue;
+}
+.sizeing{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 350px;
+     width: 200px;
+
+}
+
+#midle{
+   background-color:thistle;
+   width: 300px;
+   height: 400px;
+   border-radius: 10px;
+}
+
+#midleul{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 400px;
+     width: 270px;
 }
 
         
@@ -297,42 +332,42 @@
   <div class="bg-dark-subtle container-fluid d-flex flex-column align-items-center" id="scroll3">
                    <h1 class="mt-3 text-decoration-underline text-uppercase text-danger">Our Pricing</h1>
       <div class="row">
-           <div class="d-flex align-items-center my-5">
-                 <label class="mx-4 fs-2 text-primary">Monthly</label>
+           <div class="d-flex align-items-center my-5 justify-content-evenly" style="width:400px;">
+                 <label class="fs-2 text-primary">Monthly</label>
                  <label class="sub" for="checkbox" id="sub"><div class="round"></div></label>
-                 <label class="mx-4 fs-2 text-primary">Yearly</label>
+                 <label class="fs-2 text-primary">Yearly</label>
             </div>
        </div>
-    <div class="row d-flex justify-content-center border">
-              <div class="col-md-4 bg-light col-sm-4 col-7">
-                    <ul style="list-style-type: none;" class="d-flex flex-column justify-content-evenly border align-items-center">
-                         <li class="fs-2">basic</li>
-                         <li>$99</li>
-                         <li>50 gb storage</li>
-                         <li>2 users</li>
-                         <li>sendupto3gb</li>
-                         <li><a>get start</a></li>
+        <div id="mfl" class="my-4">
+              <div class="conprc rounded-start-4">
+                    <ul style="list-style-type: none;" class="sizeing">
+                         <li class="fs-4 text-light text-uppercase">basic</li>
+                         <li class="fs-1">$49</li>
+                         <li class="border-bottom">50 gb storage</li>
+                         <li class="border-bottom">2 users</li>
+                         <li class="border-bottom">sendupto3gb</li>
+                         <li class="bg-danger-subtle w-75 fs-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3">Get Start</a></li>
                     </ul>
               </div>
-                   <div class="col-md-4">
-                         <ul style="list-style-type: none;">
-                              <li class="mx-5 my-3" style="width: 100%;">basic</li>
-                              <li style="width: 100%;">$99</li>
-                              <li style="width: 100%;">50gbstorage</li>
-                              <li style="width: 100%;">2 users</li>
-                              <li style="width: 100%;">sendupto3gb</li>
-                              <li style="width: 150%;" class="border border-5"><a>get start</a></li>
+                   <div id="midle">
+                         <ul style="list-style-type: none;" id="midleul">
+                              <li class="fs-4 text-light text-uppercase">premium</li>
+                              <li class="fs-1">$999</li>
+                              <li class="border-bottom">500 gb storage</li>
+                              <li class="border-bottom">5 users</li>
+                              <li class="border-bottom">sendupto3gb</li>
+                              <li class="bg-danger w-75 fs-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3 text-light">Get Start</a></li>
                          </ul>
                    </div>
 
-              <div class="col-md-4">
-                    <ul style="list-style-type: none;">
-                         <li class="mx-5 my-3" style="width: 100%;">basic</li>
-                         <li style="width: 100%;">$99</li>
-                         <li style="width: 100%;">50gbstorage</li>
-                         <li style="width: 100%;">2 users</li>
-                         <li style="width: 100%;">sendupto3gb</li>
-                         <li style="width: 150%;" class="border border-5"><a>get start</a></li>
+              <div class="conprc rounded-end-4">
+                    <ul style="list-style-type: none;" class="sizeing">
+                         <li class="fs-4 text-light text-uppercase">basic</li>
+                         <li class="fs-1">$99</li>
+                         <li class="border-bottom">100 gb storage</li>
+                         <li class="border-bottom">2 users</li>
+                         <li class="border-bottom">sendupto3gb</li>
+                         <li class="bg-danger-subtle w-75 fs-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3">Get Start</a></li>
                     </ul>
               </div>
 
