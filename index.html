@@ -136,11 +136,25 @@
    width: 800px;
 }
 
+@media(max-width:768px){
+        #mfl{
+          flex-direction: column;
+        }
+}
+
 .conprc{
     width: 230px;
     height: 350px;
     background-color: steelblue;
 }
+
+@media(max-width:768px){
+       .conprc{
+           height: 240px;
+           width: 170px;
+       }
+}
+
 .sizeing{
      display: flex;
      flex-direction: column;
@@ -151,11 +165,27 @@
 
 }
 
+@media(max-width:768px){
+       .sizeing{
+            height: 240px;
+            width: 140px;
+       }
+}
+
 #midle{
    background-color:thistle;
    width: 300px;
    height: 400px;
    border-radius: 10px;
+}
+
+@media(max-width:768px){
+     #midle{
+           height: 240px;
+           width: 170px;
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
 }
 
 #midleul{
@@ -165,6 +195,13 @@
      justify-content: space-evenly;
      height: 400px;
      width: 270px;
+}
+
+@media(max-width:768px){
+     #midleul{
+            height: 240px;
+            width: 140px;
+       }
 }
 
         
@@ -339,14 +376,14 @@
             </div>
        </div>
         <div id="mfl" class="my-4">
-              <div class="conprc rounded-start-4">
+              <div class="conprc rounded-start-md-4 rounded-4">
                     <ul style="list-style-type: none;" class="sizeing">
                          <li class="fs-4 text-light text-uppercase">basic</li>
                          <li class="fs-1" id="lowpr">$49</li>
                          <li class="border-bottom">50 gb storage</li>
                          <li class="border-bottom">2 users</li>
                          <li class="border-bottom">sendupto3gb</li>
-                         <li class="bg-danger-subtle w-75 fs-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3">Get Start</a></li>
+                         <li class="bg-danger-subtle w-75 fs-md-4 text-center rounded-2 fs-5"><a href="#" class="text-decoration-none mb-3">Get Start</a></li>
                     </ul>
               </div>
                    <div id="midle">
@@ -356,18 +393,18 @@
                               <li class="border-bottom">500 gb storage</li>
                               <li class="border-bottom">5 users</li>
                               <li class="border-bottom">sendupto3gb</li>
-                              <li class="bg-danger w-75 fs-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3 text-light">Get Start</a></li>
+                              <li class="bg-danger w-75 fs-md-4 text-center rounded-2 fs-5"><a href="#" class="text-decoration-none mb-3 text-light">Get Start</a></li>
                          </ul>
                    </div>
 
-              <div class="conprc rounded-end-4">
+              <div class="conprc rounded-end-md-4 rounded-4">
                     <ul style="list-style-type: none;" class="sizeing">
                          <li class="fs-4 text-light text-uppercase">basic</li>
                          <li class="fs-1" id="midpri">$99</li>
                          <li class="border-bottom">100 gb storage</li>
                          <li class="border-bottom">2 users</li>
                          <li class="border-bottom">sendupto3gb</li>
-                         <li class="bg-danger-subtle w-75 fs-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3">Get Start</a></li>
+                         <li class="bg-danger-subtle w-75 fs-5 fs-md-4 text-center rounded-2"><a href="#" class="text-decoration-none mb-3">Get Start</a></li>
                     </ul>
               </div>
 
