@@ -58,8 +58,8 @@ side.addEventListener("click", function(){
            side.style.justifyContent='flex-start';
            price.innerHTML="$49";
            money.innerHTML="$999";
-          charge.innerHTML="$99";
+           charge.innerHTML="$99";
            val=0;
        }
       
-})
+});
