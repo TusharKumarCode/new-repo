@@ -1,14 +1,10 @@
-let bticon=document.getElementById("bar");
-let closebtn=document.getElementById("cross");
-let slt=document.getElementById("colps");
-let remo=document.getElementById("btmo");
-
-bticon.addEventListener('click', function(){
-           slt.setAttribute("class","flex justify-evenly md:w-3/4 items-center md:static absolute top-0 left-0 flex-col md:flex-row md:bg-inherit bg-orange-300 w-full h-full");
-           remo.setAttribute('class','md:w-64 md:mr-2 flex justify-evenly md:static absolute top-4 left-0 w-full')
+let opbtn=document.getElementById("open");
+let clbtn=document.getElementById("close");
+let box=document.getElementById("list");
+opbtn.addEventListener('click',function(){
+             box.setAttribute('class',"md:flex flex justify-evenly items-center md:my-7 md:w-[1100px] w-full h-full md:h-auto absolute top-0 left-0 md:static flex-col md:flex-row bg-orange-400 md:bg-inherit")
 });
 
-closebtn.addEventListener("click",function(){
-    slt.setAttribute("class","flex justify-evenly md:w-3/4 items-center md:static absolute top-0 left-full flex-col md:flex-row md:bg-inherit bg-orange-300 w-full h-full");
-    remo.setAttribute('class','md:w-64 md:mr-2 flex justify-evenly md:static absolute top-4 left-full w-full')
-})
+clbtn.addEventListener('click',function(){
+    box.setAttribute('class',"md:flex flex justify-evenly items-center md:my-7 md:w-[1100px] w-full  md:h-auto absolute top-0 left-0 md:static flex-col md:flex-row bg-orange-400 md:bg-inherit hidden")
+});

@@ -6,39 +6,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>name</title>
-    
+    <!-- <style>
+          @media(max-width:767px){
+                 html,body{
+                     height: 100%;
+                     width: 100%;
+                     margin: 0px;
+                     padding: 0px;
+                     overflow-x: hidden;
+                 }
+          }
+    </style> -->
     
 </head>
-<body class="overflow-hidden">
-     <header class="h-96 bg-blue-700 bg-no-repeat bg-cover bg-center" style="background-image: url(https://cdn.pixabay.com/photo/2020/08/22/17/51/boat-5509027_1280.jpg);">
-        <nav class="h-20 flex justify-between items-center">
-          <i class="fa-solid fa-bars fa-shake text-3xl md:invisible visible ml-2" id="bar"></i>
-            <h1 class="md:text-5xl text-2xl">setflix</h1>
-             <div class="md:flex md:w-2/4 md:justify-evenly w-48 md:items-center">
-                 <input placeholder="search" class="md:h-12 md:w-80 rounded-full md:text-2xl indent-2 h-10">
-                 <ul class="flex justify-evenly md:w-3/4 items-center md:static absolute top-0 left-full flex-col md:flex-row md:bg-inherit bg-orange-300 w-full h-full" id="colps">
-                  <i class="fa-solid fa-xmark fa-beat-fade md:invisible visible text-3xl md:ml-0" id="cross"></i>
-                    <li class="md:text-2xl text-xl">home</li>
-                    <li class="md:text-2xl">about</li>
-                    <li class="text-2xl">service</li>
-                    <li class="text-2xl">contact</li>
-                 </ul>
-             </div>
-
-              <div class="flex md:w-32 justify-evenly items-center w-28">
-                <i class="fa-solid fa-sun md:text-2xl text-xl"></i>
-              <div class="md:h-8 md:w-16 rounded-full bg-blue-700 flex justify-end items-center h-7 w-14" for="checkbox"><div class="bg-red-200 md:h-5 md:w-5 rounded-full mr-1 h-4 w-4"></div></div>
-                <i class="fa-solid fa-moon md:text-2xl text-xl"></i>
-              </div>
-            
-              <div class="md:w-64 md:mr-2 flex justify-evenly md:static absolute top-4 left-full w-full" id="btmo">
-                <button class="md:h-12 md:w-28 border md:text-xl rounded-2xl h-10 w-24">sign up</button>
-                <button class="md:h-12 md:w-28 border md:text-xl rounded-2xl h-10 w-24">login</button>
-              </div>
-        </nav>
-                
+<body>
+     <header class="h-screen w-full bg-blue-700 bg-no-repeat bg-cover bg-center bg-[url('https://cdn.pixabay.com/photo/2020/08/22/17/51/boat-5509027_1280.jpg')]">
+          <div class="h-screen w-full bg-[rgba(0,0,0,0.8)] columns-1">
+                 <nav class="md:w-11/12 w-full md:mx-auto flex items-center justify-between mt-8">
+                         
+                     <h1 class="md:text-5xl text-2xl text-orange-500">weblogo</h1>
+                        
+                     <div class="md:flex flex justify-arround items-center md:my-7 md:w-[1100px] w-full md:h-auto absolute top-0 left-0 md:static flex-col md:flex-row bg-orange-400 md:bg-inherit hidden" id="list">
+                        <i class="fa-solid fa-xmark text-3xl md:ml-0 ml-72 md:invisible visible" id="close"></i>
+                            <ul class="flex w-[65%] md:h-16 h-80 justify-evenly flex-col md:flex-row items-center">
+                               <li class="text-2xl text-white">home</li>
+                               <li class="text-2xl text-white">about</li>
+                               <li class="text-2xl text-white">service</li>
+                               <li class="text-2xl text-white">contact</li>
+                            </ul>
+                         
+                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full bg-[rgba(0,0,0,0.3)] text-white sm:pb-2 pb-1">signup</button>
+                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full text-white sm:pb-2 pb-1 bg-green-500">login</button>
+                     </div>
+                     <i class="fa-solid fa-bars text-3xl text-amber-700 md:invisible visible mr-10" id="open"></i>
+                 </nav>
+          </div>      
      </header>
-
+           
+          
+        <div class="bg-red-200 h-96 w-full md:w-96">
+             
+        </div>
+     
+         
      <script src="javass.js"></script>
 
 </body>
