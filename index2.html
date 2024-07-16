@@ -6,17 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>name</title>
-    <!-- <style>
-          @media(max-width:767px){
-                 html,body{
-                     height: 100%;
-                     width: 100%;
-                     margin: 0px;
-                     padding: 0px;
-                     overflow-x: hidden;
-                 }
-          }
-    </style> -->
+    
     
 </head>
 <body>
@@ -24,22 +14,35 @@
           <div class="h-screen w-full bg-[rgba(0,0,0,0.8)] columns-1">
                  <nav class="md:w-11/12 w-full md:mx-auto flex items-center justify-between mt-8">
                          
-                     <h1 class="md:text-5xl text-2xl text-orange-500">weblogo</h1>
+                     <h1 class="md:text-5xl text-2xl text-orange-500 uppercase">weblogo</h1>
                         
                      <div class="md:flex flex justify-arround items-center md:my-7 md:w-[1100px] w-full md:h-auto absolute top-0 left-0 md:static flex-col md:flex-row bg-orange-400 md:bg-inherit hidden" id="list">
                         <i class="fa-solid fa-xmark text-3xl md:ml-0 ml-72 md:invisible visible" id="close"></i>
-                            <ul class="flex w-[65%] md:h-16 h-80 justify-evenly flex-col md:flex-row items-center">
-                               <li class="text-2xl text-white">home</li>
-                               <li class="text-2xl text-white">about</li>
-                               <li class="text-2xl text-white">service</li>
-                               <li class="text-2xl text-white">contact</li>
+                            <ul class="flex w-[65%] md:w-[80%] md:h-16 h-80 justify-evenly flex-col md:flex-row items-center">
+                               <li class="text-2xl text-white capitalize">home</li>
+                               <li class="text-2xl text-white capitalize">about</li>
+                               <li class="text-2xl text-white capitalize">service</li>
+                               <li class="text-2xl text-white capitalize">contact</li>
                             </ul>
                          
-                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full bg-[rgba(0,0,0,0.3)] text-white sm:pb-2 pb-1">signup</button>
-                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full text-white sm:pb-2 pb-1 bg-green-500">login</button>
+                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full bg-[rgba(0,0,0,0.3)] text-white sm:pb-2 pb-1 capitalize" id="sign">signup</button>
+                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full text-white sm:pb-2 pb-1 bg-green-500 md:ml-5 capitalize"><a href="loginpage.html" target="_blank">login</a></button>
                      </div>
                      <i class="fa-solid fa-bars text-3xl text-amber-700 md:invisible visible mr-10" id="open"></i>
                  </nav>
+                 <div class="bg-[rgba(0,0,0,0.6)] h-screen absolute top-[-700px] w-full" id="page">
+                       <form class="w-[90%] h-[61%] md:w-[45%] md:h-[85%] sm:w-[90%] sm:h-[70%] bg-white py-5 md:px-14 px-5 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] rounded-xl">
+                            <span class="text-4xl absolute top-4 left-[90%] cursor-pointer" id="cross">&times;</span>
+                            <h1 class="text-center py-5 md:text-4xl text-xl font-medium text-emerald-500">create account</h1>
+                            <input type="text" class="w-full md:my-2 my-1 border md:h-11 sm:h-10 h-8 rounded-[5px] focus:outline-none focus:ring-2 focus:ring-teal-300 indent-5" placeholder="Name">
+                            <input type="text" class="w-full md:my-2 my-1 border md:h-11 sm:h-10 h-8 rounded-[5px] focus:outline-none focus:ring-2 focus:ring-teal-300 indent-5" placeholder="Email Id">
+                            <input type="text" class="w-full md:my-2 my-1 border md:h-11 sm:h-10 h-8 rounded-[5px] focus:outline-none focus:ring-2 focus:ring-teal-300 indent-5" placeholder="Password">
+                            <input type="text" class="w-full md:my-2 my-1 border md:h-11 sm:h-10 h-8 rounded-[5px] focus:outline-none focus:ring-2 focus:ring-teal-300 indent-5" placeholder="Conform Password">
+                            <input type="checkbox" class="my-3"> I agree all statements in Terms of service
+                            <button class="bg-gradient-to-tl from-cyan-600 to-lime-400 w-full md:h-11 md:my-5 sm:my-2 sm:h-10 my-1 h-8 rounded-[5px] text-xl text-white">sign up</button>
+                            <h1 class="text-center my-px md:my-1 font-semibold">Already have an account?<a href="loginpage.html" class="ml-2 underline uppercase" target="_blank">login here</a></h1>
+                       </form>
+                 </div>
           </div>      
      </header>
            
