@@ -6,31 +6,127 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>name</title>
-    
+    <style>
+         @keyframes slide{
+                 from{
+                    transform: translatex(0);
+                 }
+
+                 to{
+                    transform: translatex(-130%);
+                 }
+         }
+
+         #slt{
+            animation:slide 20s infinite linear;
+         }
+
+         #mov{
+            animation:slide 20s infinite linear;
+         }
+
+         #psed::before{
+               content: '';
+               background:linear-gradient(to top,blue,black);
+               height: 100%;
+               width: 100%;
+               position: absolute;
+               left: 0;
+               top:0;
+               transform: translatey(100%);
+               z-index: -1;
+               transition: all 0.3s cubic-bezier(1, 1, 0.50, 0.589);
+         }
+
+         #psed:hover:before{
+            transform: translatey(0);
+            
+            
+         }
+
+         #psed:hover{
+              cursor: pointer;
+              color:aliceblue;
+         }
+
+         #hov::before{
+              content: "";
+              background:linear-gradient(to top,blue,black);
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top:0;
+              transform: translatey(100%);
+              z-index: -1;
+              transition: all 0.3s cubic-bezier(1, 1, 0.50, 0.589);
+         }
+
+         #hov:hover:before{
+            transform: translatey(0);
+         }
+
+         #hov:hover{
+              color: aliceblue;
+              cursor: pointer;
+         }
+
+         #psean::before{
+          content: "";
+              background:linear-gradient(to top,blue,black);
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top:0;
+              transform: translatey(100%);
+              z-index: -1;
+              transition: all 0.3s cubic-bezier(1, 1, 0.50, 0.589); 
+         }
+
+         #psean:hover:before{
+                transform: translatey(0);
+         }
+
+         #psean:hover{
+              color: aliceblue;
+              cursor: pointer; 
+         }
+
+
+
+         
+
+        
+
+         
+
+         
+    </style>
     
 </head>
 <body>
-     <header class="h-screen w-full bg-blue-700 bg-no-repeat bg-cover bg-center bg-[url('https://cdn.pixabay.com/photo/2020/08/22/17/51/boat-5509027_1280.jpg')]">
+     <header class="h-screen w-full bg-no-repeat bg-cover bg-center bg-[url('https://cdn.pixabay.com/photo/2020/08/22/17/51/boat-5509027_1280.jpg')]">
           <div class="h-screen w-full bg-[rgba(0,0,0,0.8)] columns-1">
-                 <nav class="md:w-11/12 w-full md:mx-auto flex items-center justify-between mt-8">
+                 <nav class="md:w-11/12 w-full md:mx-auto flex items-center justify-between mt-8" id="sticky">
                          
-                     <h1 class="md:text-5xl text-2xl text-orange-500 uppercase">weblogo</h1>
+                     <h1 class="md:text-5xl text-xl text-orange-500 uppercase sm:text-3xl ml-5" id="logoan">weblogo</h1>
                         
-                     <div class="md:flex flex justify-arround items-center md:my-7 md:w-[1100px] w-full md:h-auto absolute top-0 left-0 md:static flex-col md:flex-row bg-orange-400 md:bg-inherit hidden" id="list">
+                     <div class="md:flex flex justify-arround items-center md:my-7 md:w-[1100px] w-full md:h-auto absolute top-0 left-0 z-50 md:static flex-col md:flex-row bg-orange-400 md:bg-inherit hidden" id="list">
                         <i class="fa-solid fa-xmark text-3xl md:ml-0 ml-72 md:invisible visible" id="close"></i>
                             <ul class="flex w-[65%] md:w-[80%] md:h-16 h-80 justify-evenly flex-col md:flex-row items-center">
-                               <li class="text-2xl text-white capitalize">home</li>
-                               <li class="text-2xl text-white capitalize">about</li>
-                               <li class="text-2xl text-white capitalize">service</li>
-                               <li class="text-2xl text-white capitalize">contact</li>
+                               <li class="md:text-2xl text-white capitalize text-xl">home</li>
+                               <li class="md:text-2xl text-white capitalize text-xl">about</li>
+                               <li class="md:text-2xl text-white capitalize text-xl">service</li>
+                               <li class="md:text-2xl text-white capitalize text-xl">contact</li>
                             </ul>
                          
-                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full bg-[rgba(0,0,0,0.3)] text-white sm:pb-2 pb-1 capitalize" id="sign">signup</button>
-                            <button class="md:text-2xl sm:text-xl text-xl md:w-24 md:h-12 sm:w-20 sm:h-11 w-16 h-10 rounded-full text-white sm:pb-2 pb-1 bg-green-500 md:ml-5 capitalize"><a href="loginpage.html" target="_blank">login</a></button>
+                            <button class="md:text-2xl  text-xl md:w-[80px] md:h-12 w-16 h-10 rounded-full bg-[rgba(0,0,0,0.3)] text-white sm:pb-2 pb-1 capitalize" id="sign">signup</button>
+                            <button class="md:text-2xl  text-xl md:w-[80px] md:h-12 w-16 h-10 rounded-full text-white sm:pb-2 pb-1 bg-green-500 md:ml-5 capitalize"><a href="loginpage.html" target="_top">login</a></button>
                      </div>
                      <i class="fa-solid fa-bars text-3xl text-amber-700 md:invisible visible mr-10" id="open"></i>
                  </nav>
-                 <div class="bg-[rgba(0,0,0,0.6)] h-screen absolute top-[-700px] w-full" id="page">
+                 <div class="bg-[rgba(0,0,0,0.6)] h-screen absolute left-[-2000px] w-full z-50" id="page">
                        <form class="w-[90%] h-[61%] md:w-[45%] md:h-[85%] sm:w-[90%] sm:h-[70%] bg-white py-5 md:px-14 px-5 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] rounded-xl">
                             <span class="text-4xl absolute top-4 left-[90%] cursor-pointer" id="cross">&times;</span>
                             <h1 class="text-center py-5 md:text-4xl text-xl font-medium text-emerald-500">create account</h1>
@@ -43,15 +139,70 @@
                             <h1 class="text-center my-px md:my-1 font-semibold">Already have an account?<a href="loginpage.html" class="ml-2 underline uppercase" target="_blank">login here</a></h1>
                        </form>
                  </div>
+                 <h1 class="text-center md:my-28 my-56 md:text-[90px] text-[50px] text-orange-500"><span class="inline-block" id="wel">welcome</span> <span class="text-white inline-block">to</span> <span class="inline-block" id="com">our</span> <span class="text-white inline-block">homepage</span></h1>
           </div>      
      </header>
-           
-          
-        <div class="bg-red-200 h-96 w-full md:w-96">
-             
-        </div>
+            
+      <div class="flex w-full overflow-hidden">
+           <div class="flex justify-between" id="slt">
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">welcome</h1>
+               <h1 class="ml-20 text-3xl">hiiiiii</h1>
+               <h1 class="ml-20 text-3xl">hiiiiii</h1>
+               <h1 class="ml-20 text-3xl">hiiiiii</h1>
+               <h1 class="ml-20 text-3xl">hiiiiii</h1>
+               <h1 class="ml-20 text-3xl">hiiiiii</h1>
+         </div>
+               <div class="flex justify-between" id="mov">
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">welcome</h1>
+                    <h1 class="ml-20 text-3xl">hiiiiii</h1>
+                    <h1 class="ml-20 text-3xl">hiiiiii</h1>
+                    <h1 class="ml-20 text-3xl">hiiiiii</h1>
+                    <h1 class="ml-20 text-3xl">hiiiiii</h1>
+                    <h1 class="ml-20 text-3xl">hiiiiii</h1>
+                  </div>
+         </div>
+
+   <div class="md:h-[550px]">
+       <h1 class="text-5xl text-center my-16 mx-5">Lorem ipsum dolor sit amet</h1>
+       <div class="md:flex md:justify-center px-14 md:px-0 md:h-[400px] h-[660px] md:items-center md:justify-evenly">
+           <div class="rounded-3xl h-[25%] w-[100%] overflow-hidden md:h-[70%] md:w-[30%] flex justify-center items-center relative md:my-0 my-10" id="psed">
+               <p class="text-xl text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+           </div>
+           <div class="md:h-[70%] md:w-[30%] h-[25%] w-[100%] relative overflow-hidden rounded-3xl flex justify-center items-center md:my-0 my-10" id="hov">
+               <p class="text-xl text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+            <div class="md:h-[70%] md:w-[30%] h-[25%] w-[100%] relative overflow-hidden rounded-3xl flex justify-center items-center md:my-0 my-10" id="psean">
+                <p class="text-xl text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+           </div>
+       </div>
+   </div>
+
+   
+        
      
-         
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
      <script src="javass.js"></script>
 
 </body>
